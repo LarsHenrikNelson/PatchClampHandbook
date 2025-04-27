@@ -6,9 +6,16 @@ parts:
   chapters:
   - file: preface
 - caption: Chapters
-  numbered: True
+  numbered: False
   chapters:
-  - file: relative/nb/external_solutions
-  - file: relative/nb/internal_solutions
-  - file: relative/nb/current_clamp
-  - file: relative/miniture_psc
+  - file: external_solutions
+  - file: internal_solutions
+  - file: current_clamp
+  - file: miniature_psc
+- caption: Appendices
+  chapters:
+  - file: signal_processing
+  - file: filtering
+- caption: Bibliography
+  chapters:
+  - file: bibliography
