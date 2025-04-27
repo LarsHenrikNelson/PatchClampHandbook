@@ -1,7 +1,14 @@
 format: jb-book
 root: index
-chapters:
-- file: ../nb/external_solutions
-- file: ../np/internal_solutions
-- file: ../nb/current_clamp
-- file: ../miniture_psc
+
+parts:
+- caption: Front Matter
+  chapters:
+  - file: preface
+- caption: Chapters
+  numbered: True
+  chapters:
+  - file: ./nb/external_solutions
+  - file: ./np/internal_solutions
+  - file: ./nb/current_clamp
+  - file: ./miniture_psc
