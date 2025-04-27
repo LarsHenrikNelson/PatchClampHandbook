@@ -2,7 +2,7 @@ title: Patch clamp electrophysiology
 author: Lars Henrik Nelson
 
 exectute:
-  execute_notebooks: force
+  execute_notebooks: 'off'
 
 bibtex_bibfiles:
   - references.bib
