@@ -14,6 +14,7 @@ parts:
   - file: miniature_psc
 - caption: Appendices
   chapters:
+  - file: python_basics
   - file: signal_processing
   - file: filtering
 - caption: Bibliography
