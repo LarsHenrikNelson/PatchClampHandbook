@@ -4,6 +4,7 @@ copyright: "2025"
 
 exectute:
   execute_notebooks: auto
+  timeout: 360
 
 bibtex_bibfiles:
   - references.bib
