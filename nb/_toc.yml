@@ -10,6 +10,7 @@ parts:
   chapters:
   - file: external_solutions
   - file: internal_solutions
+  - file: preparing_tissue
   - file: current_clamp
   - file: miniature_psc
 - caption: Appendices
