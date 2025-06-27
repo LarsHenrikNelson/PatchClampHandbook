@@ -13,13 +13,13 @@ parts:
   - file: preparing_tissue
   - file: current_clamp
   - file: miniature_psc
+  - file: distributions
 - caption: Appendices
   chapters:
   - file: python_setup
   - file: python_basics
   - file: signal_processing
   - file: filtering
-  - file: modeling_data
 - caption: Bibliography
   chapters:
   - file: bibliography

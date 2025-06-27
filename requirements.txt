@@ -1,0 +1,5 @@
+jupyter-book
+bokeh
+numpy
+pandas
+scipy
