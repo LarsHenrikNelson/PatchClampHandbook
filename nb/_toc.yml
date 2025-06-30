@@ -12,6 +12,9 @@ parts:
   - file: internal_solutions
   - file: preparing_tissue
   - file: current_clamp
+    sections:
+    - file: cc_pt1
+    - file: cc_pt2
   - file: miniature_psc
   - file: distributions
 - caption: Appendices
