@@ -16,7 +16,10 @@ parts:
     - file: cc_pt1
     - file: cc_pt2
   - file: miniature_psc
-  - file: distributions
+  - file: distributions_curves_stats
+    sections:
+    - file: distributions
+    - file: curves
 - caption: Appendices
   chapters:
   - file: python_setup
