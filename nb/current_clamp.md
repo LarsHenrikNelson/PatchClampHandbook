@@ -1,3 +1,4 @@
+(current_clamp)=
 # Current clamp
 Current clamp recordings are one of the most common patch-clamp experiment. Current clamp experiments allow you to get the active parameters of cells. Namely gain, rheobase and spike threshold. Current clamp recordings typically use stepped currrent injections or ramps and you are investigating the voltage change due to the current injection and whether and how the cell spikes. The current clamp chapter is divide into two parts. The first part is a basic analysis and covers what features we look for and why they are important. The second part will delve much deeper in relationships between spike features and cover differences between a few cell types; pyramidal cells, spiny projection neurons and parvalbumin interneurons.
 
