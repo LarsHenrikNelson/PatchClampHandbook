@@ -20,12 +20,14 @@ parts:
     sections:
     - file: distributions
     - file: curves
+  - file: signals
+    sections:
+    - file: signal_processing
+    - file: filtering
 - caption: Appendices
   chapters:
   - file: python_setup
   - file: python_basics
-  - file: signal_processing
-  - file: filtering
 - caption: Bibliography
   chapters:
   - file: bibliography
