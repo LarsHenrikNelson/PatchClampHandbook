@@ -15,7 +15,10 @@ parts:
     sections:
     - file: cc_pt1
     - file: cc_pt2
-  - file: miniature_psc
+  - file: mspscs
+    sections:
+    - file: mspsc_pt1
+    - file: mspcs_pt2
   - file: distributions_curves_stats
     sections:
     - file: distributions
