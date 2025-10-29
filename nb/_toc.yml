@@ -4,7 +4,7 @@ root: index
 parts:
 - caption: Front Matter
   chapters:
-  - file: preface
+  - file: introduction
 - caption: Chapters
   numbered: False
   chapters:
@@ -12,7 +12,9 @@ parts:
     sections:
     - file: external_solutions
     - file: internal_solutions
+  - file: equipment
   - file: preparing_tissue
+  - file: recording_from_cells
   - file: current_clamp
     sections:
     - file: cc_pt1
