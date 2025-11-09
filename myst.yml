@@ -48,5 +48,8 @@ project:
 site:
   options:
     folders: true
+    logo: data/logo.svg
+    favicon: data/favicon.ico
   template: book-theme
-  logo: data/logo.svg
+  
+
