@@ -13,9 +13,7 @@ project:
     - nb/references.bib
   toc:
     - file: nb/index.md
-    - title: Front Matter
-      children:
-        - file: nb/introduction.md
+    - file: nb/introduction.md
     - title: Chapters
       children:
         - file: nb/solutions.md
@@ -46,10 +44,9 @@ project:
       children:
         - file: nb/python_setup.md
         - file: nb/python_basics.ipynb
-    - title: Bibliography
-      children:
-        - file: nb/bibliography.md
+    - file: nb/bibliography.md
 site:
   options:
     folders: true
   template: book-theme
+  logo: data/logo.svg
