@@ -1,5 +1,6 @@
-jupyter-book
 bokeh
+jupyter-book
+matplotlib
 numpy
 pandas
 scipy

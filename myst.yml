@@ -1,0 +1,55 @@
+version: 1
+project:
+  title: Patch Clamp Handbook
+  description: A handbook for patch clamp electrophysiology experiments and data analysis.
+  keywords:
+    - patch clamp electrophysiology
+    - electrophysiology
+    - python
+  authors:
+    - name: Lars Henrik Nelson
+  copyright: '2025'
+  bibliography:
+    - nb/references.bib
+  toc:
+    - file: nb/index.md
+    - title: Front Matter
+      children:
+        - file: nb/introduction.md
+    - title: Chapters
+      children:
+        - file: nb/solutions.md
+          children:
+            - file: nb/external_solutions.ipynb
+            - file: nb/internal_solutions.ipynb
+        - file: nb/equipment.md
+        - file: nb/preparing_tissue.md
+        - file: nb/recording_from_cells.md
+        - file: nb/current_clamp.md
+          children:
+            - file: nb/cc_pt1.ipynb
+            - file: nb/cc_pt2.ipynb
+        - file: nb/mspscs.md
+          children:
+            - file: nb/mspsc_pt1.ipynb
+            - file: nb/mspsc_pt2.ipynb
+        - file: nb/distributions_curves_stats.md
+          children:
+            - file: nb/distributions.ipynb
+            - file: nb/curves.ipynb
+            - file: nb/synthesizing_data.ipynb
+        - file: nb/signals.ipynb
+          children:
+            - file: nb/signal_processing.ipynb
+            - file: nb/filtering.ipynb
+    - title: Appendices
+      children:
+        - file: nb/python_setup.md
+        - file: nb/python_basics.ipynb
+    - title: Bibliography
+      children:
+        - file: nb/bibliography.md
+site:
+  options:
+    folders: true
+  template: book-theme
