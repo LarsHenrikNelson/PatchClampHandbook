@@ -13,14 +13,24 @@ To measure this experimentally for your internal-external combination you will n
 The reversal potential also applies to neurons in-vivo. The most notorious and false claim is that GABA is excitatory during development because of a change in the reversal potential of chloride due a change in expression from NKCC1 to NKCC2 during the first week of life. NKCC1 leads to higher cellular chloride levels. What this means is that GABA can depolarize cells until that cell reaches a specific membrane potential at which it will begin to inhibit neurons. However, GABA does not ever elicit action potetials. To get more complicated the effects of GABA depend on the brain region during the first week of life in mice. If you stimulate GABAergic neurons or potentiate GABA receptors in the neonatal cortex you get suppression of activity in-vivo however, you can increase network activity in the hippocampus at postnatal day 3 in mice by stimulating GABAergic cells [@kirmse_gaba_2015;@valeeva_optogenetic_2016;@murata_gabaergic_2020]. Another complication is the some slice experiments show GABA depolarizing cells but this seems to be a feature of brain slices. Is GABA excitatory? Only in a very specific instance. This misleading idea also shows the potential limits of slice electrophysiology.
 
 ## Resting membrane potential
-If you want to determine the theoretical resting membrane potential usin the solution you have you can use the Goldman-Hodgkin-Katz voltage equation: $${ E_{m}={\frac {RT}{F}}\ln {\left({\frac {\sum _{i}^{n}P_{M_{i}^{+}}[M_{i}^{+}]_{\mathrm {out} }+\sum _{j}^{m}P_{A_{j}^{-}}[A_{j}^{-}]_{\mathrm {in} }}{\sum _{i}^{n}P_{M_{i}^{+}}[M_{i}^{+}]_{\mathrm {in} }+\sum _{j}^{m}P_{A_{j}^{-}}[A_{j}^{-}]_{\mathrm {out} }}}\right)}}$$
+If you want to determine the theoretical resting membrane potential using the solution you have you can use the Goldman-Hodgkin-Katz voltage equation: $${ E_{m}={\frac {RT}{F}}\ln {\left({\frac {\sum _{i}^{n}P_{M_{i}^{+}}[M_{i}^{+}]_{\mathrm {out} }+\sum _{j}^{m}P_{A_{j}^{-}}[A_{j}^{-}]_{\mathrm {in} }}{\sum _{i}^{n}P_{M_{i}^{+}}[M_{i}^{+}]_{\mathrm {in} }+\sum _{j}^{m}P_{A_{j}^{-}}[A_{j}^{-}]_{\mathrm {out} }}}\right)}}$$
 Where you sum the positive ($M$) and negative ($A$) ions in the solution. You also need the permeability constant ($P$) for each ion. The membrane permeability will differ depending on the cell type. This equation is important if you want to design a new internal or external solution.
-
-```{bibliography}
-:filter: docname in docnames
-```
 
 # Junction potential
 Junction potential is the electrical potential that occurs at the boundary between two ionic solutions. The potential introduces an offset that may need to be corrected. I will summarize what the [Junction Potential blog](https://junctionpotential.blogspot.com/2009/04/what-is-junction-potential.html) goes over very nicely. Most the ions in the solution are small except the anion that attached to the main ion in your internal solution which is typically methanesulfonate or gluconate. Since the anion is large is diffuses slowly which means that more ions from the external are mixing inside the pipette than ions for the internal mixing outside the pipette. The primary issue is the large anion. You would also get the same issue if you had a large cation. If you have a large anion that is not diffusing as much then you would get a negative charge in the pipette.
 
 ## Measuring the junction potential
+You can measure the junction potential for your internals. The [Junction Potential blog](https://junctionpotential.blogspot.com/2010/10/how-do-i-measure-liquid-junction.html) has a good tutorial. You will need to path pipettes and something to hold them in the bath, a 3M KCl solution, a headstage ground connection wire with an electrode wire soldered onto it, your internal solutions, and your external solution. Make sure your electrode wires are will chlorided. You can do this one of two ways. One way will invert the sign of your offset. I will do the way that most people will probably measure the junction potential.
+1. Fill a low resistance (break the tip if you can) pipette with the 3M KCl solution.
+2. Insert the electrode connected to headstage ground connection wire in the KCl pipette and connect the ground wire to the headstage.
+3. Fill one pipette with your internal solution and put that pipette onto your headstage holder.
+4. Add the internal solution to the bath so that both pipette tips are covered.
+5. Make sure you amplifier is in current clamp mode so you can read the voltage and offset pipette so that the mV reads 0. You might need to wait a minute or two until the voltage stabilizes.
+6. Remove the solution in the bath and replace it with your external solution. The amplifier will show the junction potential in mV. This value is added to your voltages to get the actual voltage.
+
+If you have several internals then you can put your external solution in the pipette instead. You will just have to invert the sign of step 6.
+
+
+```{bibliography}
+:filter: docname in docnames
+```
