@@ -35,8 +35,11 @@ project:
           children:
             - file: nb/distributions.ipynb
             - file: nb/curves.ipynb
-            - file: nb/synthesizing_data.ipynb
-            - file: nb/statistics.ipynb
+        - file: nb/statistics.md
+            - file: nb/one_two_sample.ipynb
+            - file: nb/regression.ipynb
+            - file: nb/glm.ipynb
+        - file: nb/synthesizing_data.ipynb
         - file: nb/signals.ipynb
           children:
             - file: nb/signal_processing.ipynb
