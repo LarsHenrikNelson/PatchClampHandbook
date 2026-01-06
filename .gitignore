@@ -2,8 +2,8 @@
 current_clamp/analysis.html
 current_clamp/analysis_files/*
 *.pdf
-*.csv
 nb/_build
+nb/*.csv
 test.*
 # MyST build outputs
 _build
