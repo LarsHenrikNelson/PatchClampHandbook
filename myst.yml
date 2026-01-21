@@ -31,11 +31,9 @@ project:
           children:
             - file: nb/mspsc_pt1.ipynb
             - file: nb/mspsc_pt2.ipynb
-        - file: nb/distributions_curves_stats.md
-          children:
-            - file: nb/distributions.ipynb
-            - file: nb/curves.ipynb
+        - file: nb/curves.ipynb
         - file: nb/statistics.md
+            - file: nb/distributions.ipynb
             - file: nb/one_two_sample.ipynb
             - file: nb/regression.ipynb
             - file: nb/glm.ipynb

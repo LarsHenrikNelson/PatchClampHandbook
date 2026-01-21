@@ -21,6 +21,10 @@ This is 0 or 1, success or failure. Binary data is not that common in biology bu
 
 ## Basic terminology
 Before we start covering stats we will cover some basic terminology. Part of understanding a topic is sometimes just learning the language a topic uses.
+
+### Random function/variable and realizations
+A [random function/variable](https://en.wikipedia.org/wiki/Random_variable) is a mathematical function that generates realizations. Sometimes and maybe often times we do not know what the actual random function/variable is that generates our data and this introduces error. Realizations are the data we often work with and is the what comes out of a random function/variable. Realizations can be a single number or a set of numbers. The random component is essentially the probability of getting a specific relization. You do not choose the realization but is randomly drawn from a random function like a probability distribution.
+
 ### Central tendency
 Central tendency is the typical value for a dataset or in particular a probability distribution. We typically use the mean as a central tendency however there are also several other measures used such as the median and mode.
 - **Mean**: The weighted sum of all the values in a dataset. The basic mean just assigns a weight of `1/n` to each value where `n` is the number of samples in your dataset. Many statistical tests that use the normal distribution under the hood are comparing the standard mean. There are other versions of the mean such as geometric and power mean but they are not used in statistical tests we will cover.
