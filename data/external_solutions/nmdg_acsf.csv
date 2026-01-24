@@ -1,12 +1,12 @@
 Reagent,Molar Mass (g/mol),Concentration (mM),g per 1L
-NMDG,195.22,92,5.02
-KCl,74.55,2.5,0.18
-Sodium Phosphate monobasic monohydrate,138,1.2,0.16
-Sodium Bicarbonate,84.01,35,2.94
-HEPES,238.31,20,4.76
+NMDG,195.22,96,18.74
+KCl,74.55,2.5,0.19
+Sodium Phosphate monobasic monohydrate,138,1.25,0.17
+Sodium Bicarbonate,84.01,25,2.10
+HEPES,238.31,20,4.77
 Glucose,180.2,25,4.5
 Sodium Ascorbate,198,5,1
 Thiourea,76.12,2,0.16
 Sodium Pyruvate,110.04,3,0.34
-MgSO4 7*H2O (2.5M stock),246.48,10,4 mL
-CaCl2 (2.5M stock),147.01,0.5,200 mL
+MgSO4 7*H2O (1M stock),246.48,10,10 mL
+CaCl2 2*H20 (1M stock),147.01,0.5,0.5 mL
