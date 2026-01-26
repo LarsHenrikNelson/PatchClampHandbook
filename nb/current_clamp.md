@@ -15,7 +15,6 @@ Another factor to consider is that some cells, such as dopaminergic cells, gluta
 As mentioned in the beginning, you can record stepped currents or ramps. Stepped currents are the most common. Usually there are negative and positive steps. The negative steps can go as low as -150 to -200 pA and positive currents can as high as 600 pA (some interneurons have a very high rheobase), Steps can be irregular or regularly spaced. One problem with ramps is that some cells have depolarization block and may not spike during a ramp but will during a set of stepped pulses. Depolarization block is the inactivation of voltage-gated sodium channels due to long membrane depolarizations that does not elicit any spikes. There are conditions, such as epilepsy, where depolarization block may actually be a feature of the altered cell physiology and you could use the ramp to test whether this occurs. Below you can see and example current injection cycle and a ramp. 
 ```{image} ../data/current_injections.png
 :alt: Electrophysiology current injections
-:width: 500px
 :align: center
 ```
 How do you determine the length of a current injection? You can do short 3 ms long pulses or long 1000 ms long pulses. You can use short and steep ramps or slow and long ramps. You all of these and compare each. However, most commonly you will find that labs use a 500-1000 ms current injection. This is considered infinitely long. The reason has to do with rheobase and a related feature call chronaxie which I will explain below. You may also notice that in some cells the membrane potential slowly increases after the initial current injection until the cell spikes where as other cells, particularly PV interneurons, do not have an increase in membrane potential.
@@ -25,7 +24,11 @@ Lastly you should consider whether or not you want to run multiple cycles of the
 This next section talks about some fundamental features of neurons. These are things you should know even if you want to skip the analysis sections of the book.
 
 #### ...rheobase?
-Rheobase is one the key parameters researchers extract from current clamp data. Rheobase is consider the minimal current it takes to get a cell to fire an action potential when using an infinite duration current injection and is related to something called chronaxie [@irnich_terms_2010, @irnich_chronaxie_1980]. Rheobase is considered the input gain of a cell; how reactive a cell is to excitatory input. Rheobase as a measure is based off a curve called the Lapicque hyperbolic strength-duration curve where strength is the strength of the current injection and duration is the duration of the current injection. This curve is a decaying exponetial curve and rheobase is essentially the steady state of the duration if the stimulus is infinitely long.
+```{image} ../data/rheobase.png
+:alt: Whole cell current clamp rheobase
+:align: center
+```
+Rheobase is one the key parameters researchers extract from current clamp data. Rheobase is consider the minimal current it takes to get a cell to fire an action potential when using an infinite duration current injection and is related to something called [chronaxie](https://en.wikipedia.org/wiki/Chronaxie) [@irnich_terms_2010,@irnich_chronaxie_1980]. Rheobase is considered the input gain of a cell; how reactive a cell is to excitatory input. Rheobase as a measure is based off a curve called the Lapicque hyperbolic strength-duration curve where strength is the strength of the current injection and duration is the duration of the current injection. This curve is a decaying exponetial curve and rheobase is essentially the steady state of the duration if the stimulus was infinitely long.
 Earlier I went over how you could deal with cells that are spontaneously spiking. I have heard some arguments that you cannot even test rheobase in these cells types. If you do not want to inject current to hold the cell at -70 or another membrane voltage then you can specify rheobase as the minimum current needed to suppress spontaneous firing. This might make sense for cells that receive very little excitatory input but a lot of inhibitory input (like dopaminergic cells).
 
 #### ...membrane resistance?
@@ -35,13 +38,30 @@ Membrane resistance is the resistance of the membrane to a current. Resistance i
 * Slope of the linear regression using only: the negative current injections, the positive and negative current injections, or the rectified current injections (absolute value of current and voltage).
 
 #### ...spike threshold?
+```{image} ../data/spike_threshold.png
+:alt: Spike threshold
+:align: center
+```
 Spike threshold is the voltage threshold at which a spike will occur. This point is called a bifurcation point where there is change in the functional properties of a neuron. This bifurcation point and how it relates to the function of a neuron are studied in the field of dynamical systems. The spike threshold is a not a fixed threshold. It depends on the previous membrane voltage and the change (dV/dt) in membrane voltage. For example, PV interneurons typically do not spike when using ramp injections due to depolarization block. PV interneurons need a large and sudden (i.e highly synchronous) synpatic/current input. Previous spiking activity also changes the spike threshold of a neuron as we will see in part 2 of the current clamp analysis. The flexibility of the spike threshold is a way for neurons to increase or decrease synchronization, feature selectivity, gain, etc. on the fly.
 
 #### ...the afterhyperpolarization (AHP)?
 The AHP is the period in which a neuron cannot fire another action potential. This occurs due to densisitization of voltage-gated sodium channels. The AHP generally starts when the voltage drops below the spike threshold. The AHP occurs due to the activation of fast and slow K+ channels. The are several ways you will see the AHP analyzed. One is the maximum (or really the minimum) voltage the AHP hits. Another is the difference the maximum AHP and the spike threshold. This value can be affected by changes in the spike threshold so take care when interpreting it. Lastly, there is the mean/median value or slope of specific segments of the AHP that occur afte the AHP has reached is maximum value. The last measure is supposably allows you to measure effects of slow and fast K+ channels on the AHP. The minimum length of the AHP is important because it tells you how long a cell takes to recover before being able to spike again. This "recovery" time is partly measured by the time between spikes, the inter-event interval. The AHP can also be very different between cell types. Some cells like PV interneurons have incredilibly large but short AHPs where as pyramidal cells have smaller but long AHPs.
 
 #### ...the FI curve?
-The FI curve is the input-output curve of a cell. You get this by plotting the current injected into the cell on the x-axis and the spike frequency of the cell on the y-axis. The plotting alone does not get you much other than a visualization of how the cell responds to current injections. You can analyze curve by fitting with a sigmoid function to get the additive/subtractive gain (rheobase), input gain (slope) and output gain (maximum firing rate). You can also analyze the FI curve by running a repeated measure ANOVA however, it is harder to interpret the specific features of the curve this way.
+The FI curve is the input-output curve of a cell and allows you to inspect the different types of gain changes that may occur. You get this by plotting the current injected into the cell on the x-axis and the spike frequency of the cell on the y-axis. The plotting alone does not get you much other than a visualization of how the cell responds to current injections. You can analyze curve by fitting with a sigmoid function to get the additive/subtractive gain (rheobase), input gain (slope) and output gain (maximum firing rate). You can also analyze the FI curve by running a repeated measure ANOVA however, it is harder to interpret the specific features of the curve this way.
+
+### Understanding gain
+```{image} ../data/fi_curve.png
+:alt: FI curve
+:align: center
+```
+A core aspect of the FI if there are any gain differences between your conditions. There are three factors we are interested in with the FI curve (slope, max firing rate and current offset) and one nusciance factor (voltage offset).
+- **Slope**: The input gain of a cell, slope of the linear portion of the curve. 
+- **Maximum firing rate**: Output gain, the response gain of a cell.
+- **Current offset**: Additive/subtractive gain, pretty much just rheobase but can affected by the slope.
+- **Voltage offset**: This is usually close to zero and consider an unimportant factor for FI curves.
+
+If you want to learn more about gain I would recommend looking at Ferguson and Cardin, 2020 [@ferguson_mechanisms_2020].
 
 #### ...the firing rate?
 The firing rate is the number spikes divided by the time of the current injection. If you use a one second current injection this is just the number of spikes. The firing rate on its own is not hugely important but is important for creating the FI curve.
