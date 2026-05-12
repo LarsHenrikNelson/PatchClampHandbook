@@ -16,6 +16,7 @@ project:
     - file: nb/introduction.md
     - title: Chapters
       children:
+        - file: nb/designing_an_exp.md
         - file: nb/solutions.md
           children:
             - file: nb/external_solutions.ipynb
