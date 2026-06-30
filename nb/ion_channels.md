@@ -10,7 +10,11 @@ NALCN is a persistantly open sodium channel.
 
 ## Potassium channels
 ### Inwardly rectifying (Kir)
-Inwardly rectifying potassium channels, also called Kir channels, conduct current *into* a cell when the cell is at more hyperpolarized voltages and conduct very little outward current. Kir channels are endogenously blocked at depolarized potentials by Mg++ and spermine [@hibinoInwardlyRectifyingPotassium2010]. As the cell membrane becames more negative Mg++ and spermine are pulled into the pore, similar to how Mg++ is pushed away from the outside of the membrane from NMDA receptors (this is related to a concept called surface charge). Interestingly as these channels get block it will also increase the membrane resistance. Celltypes, like MSNs in the striatum, that have a very hyperpolarized resting  potential of around -80 ot -90 mV express very high levels of Kir.
+Inwardly rectifying potassium channels, also called Kir channels, conduct current *into* a cell when the cell is at more hyperpolarized voltages and conduct very little outward current. Kir channels are endogenously blocked at depolarized potentials by Mg++ and spermine [@hibinoInwardlyRectifyingPotassium2010]. As the cell membrane becames more negative Mg++ and spermine are pulled into the pore, similar to how Mg++ is pushed away from the outside of the membrane from NMDA receptors (this is related to a concept called surface charge). Interestingly as these channels get block it will also increase the membrane resistance. Celltypes, like MSNs in the striatum, that have a very hyperpolarized resting  potential of around -80 ot -90 mV express very high levels of Kir. The Kir channels are Kcnj1, Kcnj2, Kcnj3, Kcnj4, Kcnj5, Kcnj6, Kcnj8, Kcnj9, Kcnj10, Kcnj11, Kcnj12, Kcnj13, Kcnj14, Kcnj15, and Kcnj16.
+```{image} ../data/gene_figures/kir.png
+:alt: Kir channel gene expression
+:align: center
+```
 
 ### SK channels
 SK channels as small conductance calcium-activated potassium channels. They are activated by an increase calcium primarily through N-type calcium channels. SK channels can limit excitatory postsynaptic potentials, regulate Ca++ signaling, limit intrinsic excitability and affect pacemaking activity [@foisStructureFunctionPharmacology2026]. The SK channels expressed in the brain are Kcnn1 (SK1), Kcnn2 (SK2), and Kcnn3 (SK3). Kcnn4 is not expressed in the brain.
@@ -25,6 +29,10 @@ Voltage-gated calcium channels are generally grouped into high and low voltage-a
 
 #### L-type (Cav1)
 L-type channels have slow voltage-depedent gating properties (long-lasting currents) and are part of the HVA family. L-type channels are important for activation of CREB and regulation o gene expression. L-type channhels are sensitive to 1,4-dihidropyridine (DHP). L-type calcium channels are Cacna1s (Cav1.1), Cacna1c (Cav1.2), Cacna1d (Cav1.3), Cacna1f (Cav1.4). 
+```{image} ../data/gene_figures/ltype_ca.png
+:alt: L-type calcium channel gene expression
+:align: center
+```
 
 #### P/Q-type (Cav2.1)
 P/Q-type channels are involved in fast synaptic transmission and expressed in the presynapse to facilitate vesicle release.The P and Q-type channels are encoded by the Cacna1a (Cav2.1) gene that is alternatively spliced to produce each of the subtypes [@simmsNeuronalVoltageGatedCalcium2014]. P/Q-type channels are also regulated through several G protein coupled pathways [@catterallVoltageGatedCalciumChannels2011].
@@ -34,12 +42,23 @@ N-type channels are involved in fast synaptic transmission and expressed in the 
 
 #### R-type (Cav2.3)
 N-type channels are involved in fast synaptic transmission and expressed in the presynapse to facilitate vesicle release.
+```{image} ../data/gene_figures/other_ca.png
+:alt: N, P/Q and R calcium channel gene expression
+:align: center
+```
 
 #### T-type (Cav3)
 T-type channels are part of the LVA family so they do not contain any ancillary subunits. T-type channels are involved in presynaptic vescicular release. They are expressed in the postsynapse and help drive dendritic axon potentials. They also help facilitate the activation of voltage-gated Na+ channels. T-type channels have also been implicated in pacemaking activity [@beanActionPotentialMammalian2007; @catterallVoltageGatedCalciumChannels2011; @simmsNeuronalVoltageGatedCalcium2014]. T-type calcium channels are also regulated by G protein signaling [@catterallVoltageGatedCalciumChannels2011]. T-type channels are Cacna1g (Cav3.1), Cacna1h (Cav3.2) and Cacna1i(Cav3.3).
-
+```{image} ../data/gene_figures/ttype_ca.png
+:alt: T-type calcium channel gene expression
+:align: center
+```
 
 ## Other channels
 ### HCN channels
 Hyperpolarized-activated cyclic nucleotide channels are cation channels that open when a cell becomes hyperpolarized below ~-40 mV and whose kinetics can be altered by cyclic nucleatide (in particular cAMP). There are four variants each with different kinetics and sensitivity to cAMP. HCN channels primarily conduction Na+ and K+. These subunits have differences in activation speed where activation speed fast to slowest 1 &rarr; 2 &rarr; 3 &rarr; 4 [@sartianiHyperpolarizationActivatedCyclicNucleotide2017]. cAMP can also allow HCN channels to open faster and at more depolarized levels where sensitivity is most to least 4 &rarr; 2 &rarr; 1 &rarr; 3. Lastly HCN channel opening is faster at more negative voltages with voltage sensitivity being different among the channels.
 One important thing about HCN channels is that many cell types express HCN channels but the location of the protein is cell-dependent and related to how HCN currents are involved in neuronal function. HCN channels are highly expressed in pacemaking neurons like midbrain dopaminergic cells. While HCN channels contribute to pacemaking activity they are not essential to pacemaking activity [@neuhoffIhChannelsContribute2002; @chanHCN2HCN1Channels2004]. They are more modulators of pacemaking activity governing pacemaking speed and regularity. When HCN channels are expressed on the presynapse, such as in PV interneurons, they can change the synaptic release probability by regulating Ca++ levels through T-type Ca++ channels (remember HCN channels are permeable to Na+) [@bussHCN1HyperpolarizationactivatedCyclic2024; @caiPresynapticHCNChannels2022]. HCN channels expressed in axons of PV basket cells helps sustain high frequency firing [@rothAxonspecificExpressionHCN2020]. When HCN channels are expressed in the spines and dendrites they may help set the level of excitatory input needed to drive an action potential. HCN channels also contribute to resonance since they make membrane resistance nonlinear.
+```{image} ../data/gene_figures/hcn.png
+:alt: HCN channel gene expression
+:align: center
+```
