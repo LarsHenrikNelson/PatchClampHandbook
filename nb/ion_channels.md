@@ -9,6 +9,8 @@ Voltage-gated sodium channels are generally needed for a cell to generate an act
 NALCN is a persistantly open sodium channel.
 
 ## Potassium channels
+Potassium channels are the most diverse set of ion channels in the brain. The regulate the resting membrane potential, action potential threshold, and the afterhyperpolarization depending on the cell type.
+
 ### Inwardly rectifying (Kir)
 Inwardly rectifying potassium channels, also called Kir channels, conduct current *into* a cell when the cell is at more hyperpolarized voltages and conduct very little outward current. Kir channels are endogenously blocked at depolarized potentials by Mg++ and spermine [@hibinoInwardlyRectifyingPotassium2010]. As the cell membrane becames more negative Mg++ and spermine are pulled into the pore, similar to how Mg++ is pushed away from the outside of the membrane from NMDA receptors (this is related to a concept called surface charge). Interestingly as these channels get block it will also increase the membrane resistance. Celltypes, like MSNs in the striatum, that have a very hyperpolarized resting  potential of around -80 ot -90 mV express very high levels of Kir. The Kir channels are Kcnj1, Kcnj2, Kcnj3, Kcnj4, Kcnj5, Kcnj6, Kcnj8, Kcnj9, Kcnj10, Kcnj11, Kcnj12, Kcnj13, Kcnj14, Kcnj15, and Kcnj16.
 ```{image} ../data/gene_figures/kir.png
@@ -17,9 +19,22 @@ Inwardly rectifying potassium channels, also called Kir channels, conduct curren
 ```
 
 ### SK channels
-SK channels as small conductance calcium-activated potassium channels. They are activated by an increase calcium primarily through N-type calcium channels. SK channels can limit excitatory postsynaptic potentials, regulate Ca++ signaling, limit intrinsic excitability and affect pacemaking activity [@foisStructureFunctionPharmacology2026]. The SK channels expressed in the brain are Kcnn1 (SK1), Kcnn2 (SK2), and Kcnn3 (SK3). Kcnn4 is not expressed in the brain.
+SK channels as small conductance calcium-activated potassium channels. They are activated by an increase calcium primarily through N-type calcium channels. SK channels can limit excitatory postsynaptic potentials, regulate Ca++ signaling, limit intrinsic excitability and affect pacemaking activity [@foisStructureFunctionPharmacology2026]. The SK channels expressed in the brain are Kcnn1 (SK1), Kcnn2 (SK2), and Kcnn3 (SK3). Kcnn4 is not expressed in the brain. The primary blocker of SK channels is apamin, a peptide toxin [@foisStructureFunctionPharmacology2026]. Apamin blocks SK1 and SK3 with lower potency. There are a host of other synthetic SK channel blockers with varying potency and selectivity [@foisStructureFunctionPharmacology2026].
 ```{image} ../data/gene_figures/sk_channel.png
 :alt: SK channel gene expression
+:align: center
+```
+### GIRK channels
+GIRK channels are G protein-coupled inwardly rectifying potassium channels. GIRK channels are opened when the &#946;&#947; G protien subunits interacts with the GIRK channel.
+```{image} ../data/gene_figures/girk.png
+:alt: GIRK channel gene expression
+:align: center
+```
+
+### Low-threshold potassium channels (M current/Kv7)
+Low-threshold potassium channels channels produce an outward current, are open at near resting membrane potential and lack inactivation (open or closed)  [@greeneModulationKv7Channels2017]. The Kv7 channels are very important for setting the membrane potential at the axon intial segment. Currents throught these channels have been termed M-current since they were discovered when the muscarinic acetylcholine receptor (MAchR 1 and 3) channel is activated altered the potassium current. There are a variety of Gq coupled receptors that supress the channel. The low-threshold potassium channels are Kcnq1 (Kv7.1), Kcnq2 (Kv7.2), Kcnq3 (Kv7.3), Kcnq4 (Kv7.4), and Kcnq5 (Kv7.5). Kcnq1 is not expressed much in the CNS. You can blocker Kv7 channels with XE991.
+```{image} ../data/gene_figures/low_current_k.png
+:alt: Low-threshold potassium channel gene expression
 :align: center
 ```
 
@@ -36,14 +51,22 @@ L-type channels have slow voltage-depedent gating properties (long-lasting curre
 
 #### P/Q-type (Cav2.1)
 P/Q-type channels are involved in fast synaptic transmission and expressed in the presynapse to facilitate vesicle release.The P and Q-type channels are encoded by the Cacna1a (Cav2.1) gene that is alternatively spliced to produce each of the subtypes [@simmsNeuronalVoltageGatedCalcium2014]. P/Q-type channels are also regulated through several G protein coupled pathways [@catterallVoltageGatedCalciumChannels2011].
+```{image} ../data/gene_figures/pqtype_ca.png
+:alt: P/Q-type calcium channel gene expression
+:align: center
+```
 
 #### N-type (Cav2.2)
-N-type channels are involved in fast synaptic transmission and expressed in the presynapse to facilitate vesicle release. N-type channels are also regulated through several G protein coupled pathways [@catterallVoltageGatedCalciumChannels2011]. N-type chanels are well known to activate SK channels
+N-type channels are involved in fast synaptic transmission and expressed in the presynapse to facilitate vesicle release. The N-type calcium channels are encoded by the Cacna1b gene. N-type channels are also regulated through several G protein coupled pathways [@catterallVoltageGatedCalciumChannels2011]. N-type chanels are well known to activate SK channels.
+```{image} ../data/gene_figures/ntype_ca.png
+:alt: N-type calcium channel gene expression
+:align: center
+```
 
 #### R-type (Cav2.3)
-N-type channels are involved in fast synaptic transmission and expressed in the presynapse to facilitate vesicle release.
-```{image} ../data/gene_figures/other_ca.png
-:alt: N, P/Q and R calcium channel gene expression
+N-type channels are involved in fast synaptic transmission and expressed in the presynapse to facilitate vesicle release. The N-type calcium channels is encoded by the Cacna1e gene.
+```{image} ../data/gene_figures/rtype_ca.png
+:alt: R-type calcium channel gene expression
 :align: center
 ```
 

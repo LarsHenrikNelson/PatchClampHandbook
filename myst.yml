@@ -32,6 +32,7 @@ project:
           children:
             - file: nb/mspsc_pt1.ipynb
             - file: nb/mspsc_pt2.ipynb
+        - file: nb/ion_channels.md
         - file: nb/curves.ipynb
         - file: nb/statistics.md
           children:
