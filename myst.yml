@@ -40,6 +40,7 @@ project:
             - file: nb/one_two_sample.ipynb
             - file: nb/regression.ipynb
             - file: nb/glm.ipynb
+            - file: nb/statistics_as_gen_model.ipynb
             - file: nb/building_a_model.ipynb
         - file: nb/synthesizing_data.ipynb
         - file: nb/signals.ipynb
