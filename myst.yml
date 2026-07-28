@@ -34,9 +34,9 @@ project:
             - file: nb/mspsc_pt2.ipynb
         - file: nb/ion_channels.md
         - file: nb/curves.ipynb
+        - file: nb/distributions.ipynb
         - file: nb/statistics.md
           children:
-            - file: nb/distributions.ipynb
             - file: nb/one_two_sample.ipynb
             - file: nb/regression.ipynb
             - file: nb/glm.ipynb
