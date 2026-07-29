@@ -17,13 +17,13 @@ project:
     - title: Chapters
       children:
         - file: nb/designing_an_exp.md
-        - file: nb/solutions.ipynb
           children:
+            - file: nb/solutions.ipynb
             - file: nb/external_solutions.ipynb
             - file: nb/internal_solutions.ipynb
-        - file: nb/equipment.md
-        - file: nb/preparing_tissue.md
-        - file: nb/recording_from_cells.md
+            - file: nb/equipment.md
+            - file: nb/preparing_tissue.md
+            - file: nb/recording_from_cells.md
         - file: nb/current_clamp.md
           children:
             - file: nb/cc_pt1.ipynb
@@ -33,7 +33,7 @@ project:
             - file: nb/mspsc_pt1.ipynb
             - file: nb/mspsc_pt2.ipynb
         - file: nb/ion_channels.md
-        - file: nb/curves.ipynb
+        - file: nb/understanding_your_data.ipynb
         - file: nb/distributions.ipynb
         - file: nb/statistics.md
           children:
@@ -42,6 +42,7 @@ project:
             - file: nb/glm.ipynb
             - file: nb/statistics_as_gen_model.ipynb
             - file: nb/building_a_model.ipynb
+        - file: nb/curves.ipynb
         - file: nb/synthesizing_data.ipynb
         - file: nb/signals.ipynb
           children:
