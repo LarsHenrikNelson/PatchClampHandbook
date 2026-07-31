@@ -16,10 +16,10 @@ project:
     - file: nb/introduction.md
     - file: nb/designing_an_exp.md
       children:
+        - file: nb/equipment.md
         - file: nb/solutions.ipynb
         - file: nb/external_solutions.ipynb
         - file: nb/internal_solutions.ipynb
-        - file: nb/equipment.md
         - file: nb/preparing_tissue.md
         - file: nb/recording_from_cells.md
     - file: nb/current_clamp.md
