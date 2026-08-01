@@ -1,0 +1,2 @@
+# Analyzing your data
+In the next section of the book we will use Python to analyze the recording you capture with your software. I will show you how to load your data into Python and cover the fundamentals of analysis.

@@ -22,17 +22,21 @@ project:
         - file: nb/internal_solutions.ipynb
         - file: nb/preparing_tissue.md
         - file: nb/recording_from_cells.md
-    - file: nb/current_clamp.md
+    - file: nb/biology_of_electrophysiology.md
       children:
-        - file: nb/cc_pt1.ipynb
-        - file: nb/cc_pt2.ipynb
-    - file: nb/mspscs.md
+        - file: nb/current_clamp.md
+        - file: nb/mspscs.md
+        - file: nb/ion_channels.md
+    - file: nb/analyzing_your_data.md
       children:
+        - file: nb/cc_pt1.ipynb      
         - file: nb/mspsc_pt1.ipynb
         - file: nb/mspsc_pt2.ipynb
-    - file: nb/ion_channels.md
-    - file: nb/understanding_your_data.ipynb
-    - file: nb/distributions.ipynb
+    - file: nb/interpret_your_data.md
+      children:
+        - file: nb/understanding_your_data.ipynb
+        - file: nb/distributions.ipynb
+        - file: nb/cc_pt2.ipynb
     - file: nb/statistics.md
       children:
         - file: nb/one_two_sample.ipynb

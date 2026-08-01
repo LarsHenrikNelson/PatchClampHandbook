@@ -1,0 +1,2 @@
+# Interpret your data
+In this chapter we will cover how to interpret your data. I will cover core data principles that I think electrophysiologist should and really an biological scientist should know. Next we will go through data we analyzed in the previous section but with the addition of more cells and more cell types.

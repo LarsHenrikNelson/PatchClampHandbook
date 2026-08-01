@@ -1,0 +1,2 @@
+# Biology of electrophysiology
+In this chapter we will go over the biology related to electrophysiology. Some of the biology is covered in other neuroscience textbooks so in this book we will focus on the measures we get from patch clamp and what they mean. This section is designed for people who will do electrophysiology and those who don't but want to understand why electrophysiologist capture the data that they do.
