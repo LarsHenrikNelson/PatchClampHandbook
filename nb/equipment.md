@@ -6,7 +6,7 @@ There are several pieces of core equipment that you will need to run a patch cla
 You will need a microscope. Microscopes can be either fixed to a platform or on a low friction movable stage. If the microscope it fixed to a platform then your manipulators will generally be on a movable stage along with the the slice well. Microscopes come from a variety of companies.
 ::::{grid} 1 1 2 3
 :::{grid-item}
-```{figure} ../data/ephys_rig/bx51wl-rig.JPEG
+```{figure} ../data/ephys_rig/bx51wI-rig.JPEG
 :height: 250px
 
 Olympus BX51WI with manual micrometers
