@@ -22,6 +22,7 @@ project:
         - file: nb/internal_solutions.ipynb
         - file: nb/preparing_tissue.md
         - file: nb/recording_from_cells.md
+        - file: nb/current_clamp_exp.md
     - file: nb/biology_of_electrophysiology.md
       children:
         - file: nb/current_clamp.md

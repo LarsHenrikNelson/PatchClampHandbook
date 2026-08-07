@@ -24,6 +24,9 @@ SK channels as small conductance calcium-activated potassium channels. They are 
 :alt: SK channel gene expression
 :align: center
 ```
+### BK channels
+BK channels are large conductance potassium channels. They contribute to the repolarization of the action potential and the fast after-hyperpolarization potentail [@sahChannelsUnderlyingNeuronal2002]. 
+
 ### GIRK channels
 GIRK channels are G protein-coupled inwardly rectifying potassium channels. GIRK channels are opened when the &#946;&#947; G protien subunits interacts with the GIRK channel.
 ```{image} ../data/gene_figures/girk.png
