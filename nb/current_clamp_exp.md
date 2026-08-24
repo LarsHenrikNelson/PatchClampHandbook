@@ -38,7 +38,8 @@ Pink noise current injection
 ```
 :::
 ::::
-Some other aspects of noise injections are the power and autocorrelation. If you look at the power spectral density of white and pink noise you will see that white noise has equal power across frequencies where pink noise has decreasing power across frequencies. So, $1/f$ means that low frequencies have larger power than high frequencies. 
+Some other aspects of noise injections are the power and autocorrelation. If you look at the power spectral density of white and pink noise you will see that white noise has equal power across frequencies where pink noise has decreasing power across frequencies. So, $1/f$ means that low frequencies have larger power than high frequencies.
+
 #### Power spectral density of noise
 ::::{grid} 1 1 2 2
 :::{grid-item}
@@ -54,6 +55,7 @@ Pink noise PSD
 :::
 ::::
 Each noise also has an autocorrelation that is important for the computation aspects of the noise. Pink noise has large correlations at short time scales because low frequencies are predominate so temporal correlation goes up. White has very little correlation structure. For that reason white noise is typically filtered with an exponential kernel. The exponential kernel *tau* correlates the noise by reducing the power of frequencies of high frequencies below the cutoff ($\frac{1}{2\pi \tau}$). It essentially simulates the decay of synaptic input. Long tau means slower fluctuations will predominate creating a peak in the autocorrelation a 0. The benefit of pink noise is that it is multiscale (fluctuation across multiple timescales) where as white noise is totally random with no multiscale fluctuations. Multiscale means that many timescales are represented which means that the signal can have memory or correlation. Multiscale is also more *in-vivo* like since it captures slow state changes like arousal and faster changes like network oscillations and synaptic conductances. The decay in the autocorrelation is because low frequencies are predominately driving how the noise "looks". 
+
 #### Noise autocorrelation
 ::::{grid} 1 1 2 2
 :::{grid-item}
@@ -68,11 +70,6 @@ Pink noise autocorrelation
 ```
 :::
 ::::
-
-
-
-
-
 
 ### Chirp
 A chirp is a sine wave that changes in frequency over time, usually going from low to high frequency. Chirps are used to test the resonant frequency of a neuron or the nonlinear resistance of neuron. If possible I recommend running chirps since they capture how the capacitance and membrane resistance interact.
