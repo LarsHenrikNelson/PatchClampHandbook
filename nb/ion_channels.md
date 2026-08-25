@@ -38,7 +38,7 @@ SK channels as small conductance calcium-activated potassium channels. They are 
 ```
 ### BK channels
 BK channels are large conductance Ca++-activated and voltage-activated potassium channels. They contribute to the repolarization of the action potential, the fast after-hyperpolarization potential, synaptic release and membrane excitability [@sahChannelsUnderlyingNeuronal2002, @contetBKChannelsCentral2016]. BK channels a composed of a single pore-forming alpha subunit, Kcnma1. There are also $\beta$ and $\gamma$ subunits that determine the Ca++- and voltage-sensing properties, kinetics and function of the $\alpha$ subunit [@liModulationBKChannel2016]. The $\beta$ subunit are Kcnmb1, Kcnmb2, Kcnmb3, and Kcnmb4. The Kcnmb4 and Kcnmb2 are the primary subunits expressed in the CNS. Kcnmb1 and Kcnmb2 slow kinetics and increase Ca++ and voltage sensitivity [@liModulationBKChannel2016]. Kcnmb4 reduces Ca++ sensitivity in a dose depedent manner [@liModulationBKChannel2016]. The $\gamma$ subunits are Lrrc26 ($\gamma 1$), Lrrc52 ($\gamma 2$), Lrrc55 ($\gamma 3$) and Lrrc38 ($\gamma 4$). The $\gamma$ subunits seem to largely drive activation towards hyperpolarizing voltages [@liModulationBKChannel2016].
-```{image} ../data/gene_figures/BK_channel.png
+```{image} ../data/gene_figures/bk_channels.png
 :alt: BK channel and subunit gene expression
 :align: center
 ```
