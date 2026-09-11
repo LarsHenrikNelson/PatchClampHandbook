@@ -90,7 +90,7 @@ N-type channels are involved in fast synaptic transmission and expressed in the 
 ```
 
 #### T-type (Cav3)
-T-type channels are part of the LVA family so they do not contain any ancillary subunits. T-type channels are involved in presynaptic vescicular release. They are expressed in the postsynapse and help drive dendritic axon potentials. They also help facilitate the activation of voltage-gated Na+ channels. T-type channels have also been implicated in pacemaking activity [@beanActionPotentialMammalian2007; @catterallVoltageGatedCalciumChannels2011; @simmsNeuronalVoltageGatedCalcium2014]. T-type calcium channels are also regulated by G protein signaling [@catterallVoltageGatedCalciumChannels2011]. T-type channels are Cacna1g (Cav3.1), Cacna1h (Cav3.2) and Cacna1i(Cav3.3).
+T-type channels are part of the LVA family so they do not contain any ancillary subunits. T-type channels are involved in presynaptic vescicular release, they are expressed in the postsynapse and help drive dendritic axon potentials, and also help facilitate the activation of voltage-gated Na+ channels [@beanActionPotentialMammalian2007; @catterallVoltageGatedCalciumChannels2011; @simmsNeuronalVoltageGatedCalcium2014]. Since T-type calcium channels are activated at similar voltages as voltage-gated sodium channels they are involved in repetive and pacemaking action potential firing. T-type calcium channels are also regulated by G protein signaling [@catterallVoltageGatedCalciumChannels2011]. T-type channels are Cacna1g (Cav3.1), Cacna1h (Cav3.2) and Cacna1i(Cav3.3).
 ```{image} ../data/gene_figures/ttype_ca.png
 :alt: T-type calcium channel gene expression
 :align: center

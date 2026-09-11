@@ -31,7 +31,7 @@ project:
         - file: nb/ion_channels.md
     - file: nb/analyzing_your_data.md
       children:
-        - file: nb/cc_pt1.ipynb      
+        - file: nb/cc_pt1.ipynb  
         - file: nb/mspsc_pt1.ipynb
         - file: nb/mspsc_pt2.ipynb
     - file: nb/interpret_your_data.md
@@ -39,6 +39,7 @@ project:
         - file: nb/understanding_your_data.ipynb
         - file: nb/distributions.ipynb
         - file: nb/cc_pt2.ipynb
+        - file: nb/cc_ramp_pt1.ipynb    
     - file: nb/statistics.md
       children:
         - file: nb/one_two_sample.ipynb
