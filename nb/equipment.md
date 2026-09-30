@@ -102,7 +102,7 @@ Old Luig and Neumann cube.
 ::::
 
 ### Amplifier
-You can do electrophysiology experiments without an amplifier. The amplifier controls the currents going into a cell and the voltages the cells are held at. The amplifier allows us to record very tiny signals. The amplifier controls the mode of recording; voltage clamp, I=0, and current clamp. The amplifier has to connect to a headstage. The headstage is where the glass electrode goes. The headstage and amplifier are usually calibrated to work together so they usually come from the same company. Molecular Devices has a good book on how the headstage and amplifier work in a theoretical sense.
+You cannot do electrophysiology experiments without an amplifier. The amplifier controls the currents going into a cell and the voltages the cells are held at. The amplifier allows us to record very tiny signals. The amplifier controls the mode of recording; voltage clamp, I=0, and current clamp. The amplifier has to connect to a headstage. The headstage is where the glass electrode goes. The headstage and amplifier are usually calibrated to work together so they usually come from the same company. Molecular Devices has a good book, [The Axon Guide] (https://www.moleculardevices.com/en/assets/user-guide/dd/cns/axon-guide-to-electrophysiology-and-biophysics-laboratory-techniques), on how the headstage and amplifier work in a theoretical sense.
 ::::{grid} 1 1 1 1
 :::{grid-item}
 ```{figure} ../data/ephys_rig/amplifier.jpg
