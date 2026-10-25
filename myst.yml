@@ -16,43 +16,43 @@ project:
     - file: nb/introduction.md
     - file: nb/designing_an_exp.md
       children:
-        - file: nb/equipment.md
-        - file: nb/solutions.ipynb
-        - file: nb/external_solutions.ipynb
-        - file: nb/internal_solutions.ipynb
-        - file: nb/preparing_tissue.md
-        - file: nb/recording_from_cells.md
-        - file: nb/current_clamp_exp.md
-        - file: nb/mspsc_exp.md
+        - file: nb/design_exp/equipment.md
+        - file: nb/design_exp/solutions.ipynb
+        - file: nb/design_exp/external_solutions.ipynb
+        - file: nb/design_exp/internal_solutions.ipynb
+        - file: nb/design_exp/preparing_tissue.md
+        - file: nb/design_exp/recording_from_cells.md
+        - file: nb/design_exp/current_clamp_exp.md
+        - file: nb/design_exp/mspsc_exp.md
     - file: nb/biology_of_electrophysiology.md
       children:
-        - file: nb/current_clamp.md
-        - file: nb/mspscs.md
-        - file: nb/ion_channels.md
+        - file: nb/biology/current_clamp.md
+        - file: nb/biology/mspscs.md
+        - file: nb/biology/ion_channels.md
     - file: nb/analyzing_your_data.md
       children:
-        - file: nb/cc_pt1.ipynb  
-        - file: nb/mspsc_pt1.ipynb
-        - file: nb/mspsc_pt2.ipynb
+        - file: nb/analyze/cc_pt1.ipynb  
+        - file: nb/analyze/mspsc_pt1.ipynb
+        - file: nb/analyze/mspsc_pt2.ipynb
     - file: nb/interpret_your_data.md
       children:
-        - file: nb/understanding_your_data.ipynb
-        - file: nb/distributions.ipynb
-        - file: nb/cc_pt2.ipynb
-        - file: nb/cc_ramp_pt1.ipynb    
+        - file: nb/interpret/understanding_your_data.ipynb
+        - file: nb/interpret/distributions.ipynb
+        - file: nb/interpret/cc_pt2.ipynb
+        - file: nb/interpret/cc_ramp_pt1.ipynb    
     - file: nb/statistics.md
       children:
-        - file: nb/one_two_sample.ipynb
-        - file: nb/regression.ipynb
-        - file: nb/glm.ipynb
-        - file: nb/statistics_as_gen_model.ipynb
-        - file: nb/building_a_model.ipynb
+        - file: nb/statistics/one_two_sample.ipynb
+        - file: nb/statistics/regression.ipynb
+        - file: nb/statistics/glm.ipynb
+        - file: nb/statistics/statistics_as_gen_model.ipynb
+        - file: nb/statistics/building_a_model.ipynb
     - file: nb/curves.ipynb
     - file: nb/synthesizing_data.ipynb
     - file: nb/signals.ipynb
       children:
-        - file: nb/signal_processing.ipynb
-        - file: nb/filtering.ipynb
+        - file: nb/signals/signal_processing.ipynb
+        - file: nb/signals/filtering.ipynb
     - title: Appendices
       children:
         - file: nb/python_setup.md
