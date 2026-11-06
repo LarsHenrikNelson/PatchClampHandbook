@@ -147,6 +147,15 @@ Now that we covered the essential electrophysiology rig components you need to u
 ```
 To make sure the DAC and amplifier are hooked up correctly the output of the DAC must go to the command of the amplifier. The output of the amplifier must go to the input of the DAC. You must also have a ground pellet connected to the headstage. The ground pellet and electrode comping off the headstage (usually ACSF) must both be immersed in the same dish of solution to get a signal. The ground pellet is a local reference and separate from an equipment ground. The equipment ground is mostly for safety.
 
+## AgCl wire and pellet
+You need a chlorided silver wire for your electrode and a AgCl pellet to act as the bath ground. You can make a AgCl wire through two methods: electroplating and bleaching. Electroplating is preferred but a lot of labs using bleach. Electroplating a small wire is actually pretty simple, does not need any toxic chemicals and can be done in a minute or two.
+
+### Electroplating the silver wire.
+You will need a AA battery, 1-3M KCl solution, two silver wires and a 1 KOhm resistor. Use some fine sandpaper to remove any coating (some silver wires are coated to prevent tarnishing) or previous chloride deposited on the wire. Then hook a wire up to the + and - terminal of the battery. Don't let the wires touch. Then dip the wires in the KCl solution for 30-60 seconds. If you see a lot of bubbles coming out of the negative terminal wire you need to add a resistor inbetween the silver wire and the positive terminal of the AA battery to limit the current going through the system. Lots of bubbles leads to KCl salt build up on electrode and prevents it from chloriding well. The chlorided wire should be a light grey or rosy grey color. It will not be as dark as the bleach method.
+
+### Bleaching the wire
+You just need some bleach and a silver electrode wire. Use some fine sandpaper to remove any coating (some silver wires are coated to prevent tarnishing) or previous chloride deposited on the wire. Just put the silver wire into the bleach for up to 15 minutes until the wire is light grey.
+
 ## Other equipment
 ### Recording program
 There are both paid and free programs to record electrophysiology data. Clampex is probably the most popular paid program that I know of. The Allen Institute uses Acq4 (Python; https://github.com/acq4/acq4) and MIES (Igor; https://github.com/AllenInstitute/MIES). I have used a closed source version of ScanImage (Matlab). RTXI (http://rtxi.org/) is a real-time operating system that was designed for dynamic clamp experiments.
