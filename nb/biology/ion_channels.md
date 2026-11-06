@@ -1,3 +1,4 @@
+(ion_channels)=
 # Ion channels
 This chapter will cover some of the major ion channels and how they effect neural function. Each section is not a comprehensive coverage of the channels but act more as a starting point. I will not cover structure of the channels unless is pertains to how it related to the function of the cell. We cover ion channels because they are the primary way which charge or current can go across the membrane. The membrane is practically impermeable to ions thus the neurons need a way for charge to distribute itself across the membrane. Ion channels are also resonsible for setting the resistance of a neuron. Simplistically, the number of opened and closed channels sets the membrane resistance. The distribution of types of ion channels and their functional properites in turn sets the functional properties of the neuron.
 
