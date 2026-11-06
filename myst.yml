@@ -29,6 +29,7 @@ project:
         - file: nb/biology/current_clamp.md
         - file: nb/biology/mspscs.md
         - file: nb/biology/ion_channels.md
+        - file: nb/biology/cell_features.md
     - file: nb/analyzing_your_data.md
       children:
         - file: nb/analyze/cc_pt1.ipynb  

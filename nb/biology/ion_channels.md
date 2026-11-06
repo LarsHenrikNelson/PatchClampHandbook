@@ -45,6 +45,13 @@ BK channels are large conductance Ca++-activated and voltage-activated potassium
 :align: center
 ```
 
+### Kv3 channels
+Kv3 channels are delayed rectifying potassium channels. They require a fairly high voltage to active (hence the delayed part) but exhibit fast activation and inactivation [@covarrubiasStructuralInsightsFunction2025]. They contribute to the AHP and particularly important for the fast repolarization and fast EPSPs in PV interneurons [@huFastspikingParvalbuminGABAergic2014]. They increase the precise timing needed for temporal summation of synaptic input and increase the precision of spiking.
+```{image} ../data/gene_figures/delayed_rectifier_cb.png
+:alt: Kv3 potassium channels
+:align: center
+```
+
 ### Low-threshold potassium channels (M current/Kv7)
 Low-threshold potassium channels channels produce an outward current, are open at near resting membrane potential and lack inactivation (open or closed)  [@greeneModulationKv7Channels2017]. The Kv7 channels are very important for setting the membrane potential at the axon intial segment. Currents throught these channels have been termed M-current since they were discovered when the muscarinic acetylcholine receptor (MAchR 1 and 3) channel is activated altered the potassium current. There are a variety of Gq coupled receptors that supress the channel. The low-threshold potassium channels are Kcnq1 (Kv7.1), Kcnq2 (Kv7.2), Kcnq3 (Kv7.3), Kcnq4 (Kv7.4), and Kcnq5 (Kv7.5). Kcnq1 is not expressed much in the CNS. You can blocker Kv7 channels with XE991.
 ```{image} ../data/gene_figures/low_current_k.png
