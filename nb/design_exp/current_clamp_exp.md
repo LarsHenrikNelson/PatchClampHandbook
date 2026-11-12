@@ -13,7 +13,7 @@ Another factor to consider is that some cells, such as dopaminergic cells, gluta
 
 ### Steps vs ramps
 As mentioned in the beginning, you can record current steps or ramps. Current steps are the most common. Usually there are negative and positive steps. The negative steps can go as low as -150 to -200 pA and positive currents can as high as 600 pA (some interneurons have a very high rheobase), Steps can be irregular or regularly spaced. One problem with ramps is that some cells have depolarization block and may not spike during a ramp but will during a set of stepped pulses. Depolarization block is the inactivation of voltage-gated sodium channels due to long membrane depolarizations that does not elicit any spikes. There are conditions, such as epilepsy, where depolarization block may actually be an important feature of the cell physiology and you could use the ramp to test whether this occurs. Below you can see and example current injection cycle and a ramp. 
-```{image} ../data/current_injections.png
+```{image} ../../data/current_injections.png
 :alt: Electrophysiology current injections
 :align: center
 ```
@@ -27,13 +27,13 @@ You can add noise to your current injections to simulate the noisy synaptic inpu
 #### Example noise current injections
 ::::{grid} 1 1 2 2
 :::{grid-item}
-```{figure} ../data/white_noise/white-noise.svg
+```{figure} ../../data/white_noise/white-noise.svg
 White noise current injection
 ```
 :::
 
 :::{grid-item}
-```{figure} ../data/pink_noise/pink-noise.svg
+```{figure} ../../data/pink_noise/pink-noise.svg
 Pink noise current injection
 ```
 :::
@@ -43,13 +43,13 @@ Some other aspects of noise injections are the power and autocorrelation. If you
 #### Power spectral density of noise
 ::::{grid} 1 1 2 2
 :::{grid-item}
-```{figure} ../data/white_noise/white-noise-psd.svg
+```{figure} ../../data/white_noise/white-noise-psd.svg
 White noise PSD
 ```
 :::
 
 :::{grid-item}
-```{figure} ../data/pink_noise/pink-noise-psd.svg
+```{figure} ../../data/pink_noise/pink-noise-psd.svg
 Pink noise PSD
 ```
 :::
@@ -59,13 +59,13 @@ Each noise also has an autocorrelation that is important for the computation asp
 #### Noise autocorrelation
 ::::{grid} 1 1 2 2
 :::{grid-item}
-```{figure} ../data/white_noise/white-noise-auto-corr.svg
+```{figure} ../../data/white_noise/white-noise-auto-corr.svg
 White noise autocorrelation
 ```
 :::
 
 :::{grid-item}
-```{figure} ../data/pink_noise/pink-noise-auto-corr.svg
+```{figure} ../../data/pink_noise/pink-noise-auto-corr.svg
 Pink noise autocorrelation
 ```
 :::
@@ -73,7 +73,7 @@ Pink noise autocorrelation
 
 ### Chirp
 A chirp is a sine wave that changes in frequency over time, usually going from low to high frequency. Chirps are used to test the resonant frequency of a neuron or the nonlinear resistance of neuron. If possible I recommend running chirps since they capture how the capacitance and membrane resistance interact.
-```{image} ../data/chirp.svg
+```{image} ../../data/chirp.svg
 :alt: Electrophysiology current injections
 :align: center
 ```

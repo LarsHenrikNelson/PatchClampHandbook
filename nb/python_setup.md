@@ -30,7 +30,7 @@ The Py installer is the default installer for Python on Windows which you get [h
 1. Download and install Python version 3.12.x. 
 2. Open Powershell or command prompt.
 3. Create a virtual environment ```py -3.12 -m venv getting_started```. This will create a virtual environment in your user folder. The 3.12 is the version number, -m specifies you want to run a python module, venv is the module you want to run and getting_started is the virtual environment name.
-4. To activate the virtual environment you will need to go the virtual environment folder you created, open the bin folder and there should be a file name activate.ps. Just drag and drop this file into the powershell or command prompt and hit enter. If you get an error put quotes around the file name before hitting enter.
+4. To activate the virtual environment you will need to go the virtual environment folder you created, open the bin folder and there should be a file name `activate.ps`. Just drag and drop this file into the powershell or command prompt and hit enter. If you get an error put quotes around the file name before hitting enter.
 
 #### Pyenv (Linux or Mac)
 [Pyenv](https://github.com/pyenv/pyenv) is trickier to setup and can be hard if you are not comfortable using the terminal/shell on Linux or Mac.
@@ -38,7 +38,7 @@ The Py installer is the default installer for Python on Windows which you get [h
 2. Install Python 3.12: ```pyenv install 3.12```.
 3. Set the Python version: ```pyenv global 3.12```
 4. Create a virtual environment ```python -m venv getting_started```. This will create a virtual environment in your user folder. The -m specifies you want to run a python module, venv is the module you want to run and getting_started is the virtual environment name.
-5. To activate the virtual environment you will need to go the virtual environment folder you created, open the bin folder and there should be a file name activate.ps. Just drag and drop this file into the powershell or command prompt and hit enter. If you get an error put quotes around the file name before hitting enter.
+5. To activate the virtual environment you will need to go the virtual environment folder you created, open the bin folder and there should be a file name `activate.ps`. Just drag and drop this file into the powershell or command prompt and hit enter. If you get an error put quotes around the file name before hitting enter.
 
 #### Other managers
 For other managers such as Poetry and Uv I suggest following their documentation.

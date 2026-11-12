@@ -9,7 +9,7 @@ This next section talks about some fundamental features of neurons. These are th
 Excitability could be defined as how likely a neuron would fire when stimulated with some sort of current input. We typically use rheobase and the FI curve as a measure of excitability but, excitability is determined by several factors; membrane resistance, spike threshold, capacitance and the resting membrane potential (RMP) or leak potential (for computational models). Each of these components is explained more in-depth below however, I will go over briefly go over these factors here. Some of these factors can be related using $\Delta V=IR$. We can predict reobase from membrane resistance, spike threshold and the resting membrane potential (RMP) however, it is more complicated than that. If you imagine the cell as a passive resistor then all these factors relate through $\Delta V=IR$, where $\Delta V = V_{threshold}-V_{rest}$, $I$ is the rheobase and $R$ is the membrane resistance. However, when we are looking a cells *in-vivo* we get synaptic currents that change $\Delta V$ from a previous potential which creates a differential equation. Additionally, excitability *in-vivo* heavily depends on cell capacitance since the cell membrane acts as a frequency-dependent filter (RC filter) and one second long constant current injections do not occur *in-vivo*. The cell membrane is also a non-linear resistor, particularly when a cell gets close to the spike threshold which also changes the frequency-dependency of the membrane. It is important to remember, you can get the same excitability from different combinations of spike threshold, resting membrane potential and membrane resistance and that excitability in slice may not translate to excitability *in-vivo* since we need to account for capacitance and non-linear changes in membrane resistance.
 
 ### ...rheobase?
-```{image} ../data/rheobase.png
+```{image} ../../data/rheobase.png
 :alt: Whole cell current clamp rheobase
 :align: center
 ```
@@ -30,7 +30,7 @@ Chord is where we get the change in current and change in voltage at every step.
 One important thing to know about membrane resistance is that it is not constant. Membrane resistance drops as you get close to the spike threshold. Neurons *in-vivo* (at least pyramidal cells) are typically in a high conductance state, meaning they have lots of ion channels open due to constant synaptic bombardment. Since ion channels control resistance, increased numbers of open channels drops the resistance. This has big implications for the function of a neuron. So then why do we measure membrane resistance assuming it is static? The static membrane resistance is probably a good indicator of overall excitability of a neuron.
 
 ### ...spike threshold?
-```{image} ../data/spike_threshold.png
+```{image} ../../data/spike_threshold.png
 :alt: Spike threshold
 :align: center
 ```
@@ -43,7 +43,7 @@ The AHP is the period in which a neuron cannot fire another action potential. Th
 The FI curve is the input-output curve of a cell and allows you to inspect the different types of gain changes that may occur. You get this by plotting the current injected into the cell on the x-axis and the spike frequency of the cell on the y-axis. The plotting alone does not get you much other than a visualization of how the cell responds to current injections. You can analyze curve by fitting with a sigmoid function to get the additive/subtractive gain (rheobase), input gain (slope) and output gain (maximum firing rate). You can also analyze the FI curve by running a repeated measure ANOVA however, it is harder to interpret the specific features of the curve this way but does not have the issues that curve fitting has.
 
 #### Understanding gain
-```{image} ../data/fi_curve.png
+```{image} ../../data/fi_curve.png
 :alt: FI curve
 :align: center
 ```
@@ -65,13 +65,13 @@ The firing rate is the number spikes divided by the time of the current injectio
 While I named this section spike adaptation, I think it is described better as spiking patterns. Spike adaptation is how the interval between spikes changes over a long (1 sec) current injection. Some neurons like layer 5 pyramidal neurons have a very pronounced increased in the inter-spike interval (ISI). Other cells, like fast-spiking interneurons have something better described by jitter; the variability in ISI. Some interneurons even stutter spike where they spike in short bursts but at high frequency within the burst. Layer 5 pyramidal neurons have a doublet, or second spike, that occurs very quickly after the first spike. This doublet spike is a result of backpropogating dendritic action potentials or calcium currents. These calcium currents can get so large at high current injections that the pyramidal cell will only burst fire. Since neurons can have a variety of ways they spike, I think you should choose the spike "adaptation" measure that is best suited to the neuronal subtype. For pyramidal neurons or other neurons with pronounced increase in ISI with each successive spike we want to use a measure that captures a slowing or speeding up of spiking. For neurons like PV interneurons we are more interested in the spike jitter or variability of the ISI over time. You may want to find neurons that stutter in which case if you may want to look for high variability in the ISI with high frequency firing. To find doublets we may want to group cells by their first, second and third ISI.
 ::::{grid} 1 1 2 2
 :::{grid-item}
-```{figure} ../data/spiking_neurons/pyramidal-neuron.svg
+```{figure} ../../data/spiking_neurons/pyramidal-neuron.svg
 Pyramidal neuron with minimal spike adaptation and doublet spike.
 ```
 :::
 
 :::{grid-item}
-```{figure} ../data/spiking_neurons/pv-neuron.svg
+```{figure} ../../data/spiking_neurons/pv-neuron.svg
 PV interneuron with fast precisely spaced spikes.
 ```
 :::
@@ -83,7 +83,7 @@ Voltage sag during a hyperpolarizing current injection are caused by *Ih* curren
 - Sag normalized to peak deflection
 - Sag normalized to steady state deflection
 A couple things to note about the sag amplitude. The sag amplitude will be affected by capacitance, membrane resistance, resting membrane potential and the current you are putting into the cell. The HCN channels can open then start to close technically before the peak voltage deflection is even reached due to the membrane tau (interaction between membrane resistance and capacitance).
-```{image} ../data/voltage-sag.svg
+```{image} ../../data/voltage-sag.svg
 :alt: Voltage sag
 :align: center
 ```
