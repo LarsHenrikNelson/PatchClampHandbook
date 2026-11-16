@@ -33,18 +33,24 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      # The `jupyter-book` Python package runs the bundled MyST CLI on Node.js
+      # (it uses any Node 18/20/22+ found on PATH, or auto-installs one otherwise).
       - uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-      - name: Install Jupyter Book (via myst)
-        run: npm install -g jupyter-book
-      - name: Install Python
-        uses: actions/setup-python@v6
+          node-version: 22
+      - name: Install uv
+        uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
         with:
-          python-version: '3.13'
-      - run: pip install -r requirements.txt
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      # Install the exact environment from uv.lock into .venv
+      # (uv installs the Python from .python-version automatically).
+      # --locked fails if uv.lock is out of sync with pyproject.toml,
+      # so the book always builds with the same env as your machines.
+      - name: Sync locked environment
+        run: uv sync --locked
       - name: Build HTML Assets
-        run: jupyter-book build --html --execute
+        run: uv run jupyter-book build --html --execute
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

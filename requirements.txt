@@ -1,9 +1,0 @@
-bokeh
-dotenv
-jupyter-book
-lithos
-matplotlib
-numpy
-pandas
-scipy
-statsmodels
