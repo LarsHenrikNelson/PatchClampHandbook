@@ -38,7 +38,7 @@ project:
       children:
         - file: nb/interpret/cc_pt2.ipynb
         - file: nb/interpret/cc_ramp_pt1.ipynb  
-        - file: nb/analyze/mspsc_pt2.ipynb  
+        - file: nb/intrepret/mspsc_pt2.ipynb  
     - file: nb/describe.md
       children:
         - file: nb/describe/understanding_your_data.ipynb
