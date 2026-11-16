@@ -34,21 +34,20 @@ project:
       children:
         - file: nb/analyze/cc_pt1.ipynb  
         - file: nb/analyze/mspsc_pt1.ipynb
-        - file: nb/analyze/mspsc_pt2.ipynb
     - file: nb/interpret_your_data.md
       children:
-        - file: nb/interpret/understanding_your_data.ipynb
-        - file: nb/interpret/distributions.ipynb
         - file: nb/interpret/cc_pt2.ipynb
-        - file: nb/interpret/cc_ramp_pt1.ipynb    
-    - file: nb/statistics.md
+        - file: nb/interpret/cc_ramp_pt1.ipynb  
+        - file: nb/analyze/mspsc_pt2.ipynb  
+    - file: nb/describe.md
       children:
-        - file: nb/statistics/one_two_sample.ipynb
-        - file: nb/statistics/regression.ipynb
-        - file: nb/statistics/glm.ipynb
-        - file: nb/statistics/statistics_as_gen_model.ipynb
-        - file: nb/statistics/building_a_model.ipynb
-    - file: nb/curves.ipynb
+        - file: nb/describe/understanding_your_data.ipynb
+        - file: nb/describe/distributions.ipynb
+        - file: nb/describe/curves.ipynb
+        - file: nb/describe/statistics_as_gen_model.ipynb
+        - file: nb/describe/one_two_sample.ipynb
+        # - file: nb/describe/glm.ipynb
+        # - file: nb/describe/building_a_model.ipynb
     - file: nb/synthesizing_data.ipynb
     - file: nb/signals.ipynb
       children:
